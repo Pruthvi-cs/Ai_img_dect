@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Detector & Decoder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🖼️ AI Image Inspector</h1>
+    <p style="text-align: center; color: #94a3b8;">Drop an image file here to extract hidden generation recipes and metadata.</p>
+    
+    <div class="upload-zone" id="dropZone">
+        <label for="fileInput" class="upload-label">
+            Drag & drop your image here or <span>browse files</span>
+        </label>
+        <input type="file" id="fileInput" accept="image/*">
+    </div>
+
+    <div id="result">
+        <h2 id="verdictTitle">Verdict: </h2>
+        <p><strong>Detected Source:</strong> <span id="modelName"></span></p>
+        <h3>Extracted Raw Metadata Segments:</h3>
+        <pre id="metadataRaw"></pre>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
